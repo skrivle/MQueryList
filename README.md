@@ -32,7 +32,9 @@ myQuery.on('destroy', function () {
 myQuery.watch();
 
 ```
-The watch() method will start listening for changes on the media query object. It will make sure events are triggered on the MQuery instance when the query has matches or doesn't has matches anymore. It's important to know that you can also manually activate an MQuery instance. This can be usefull in situations where you know media queries aren't supported, for example in IE8. In many cases you will just serve a desktop css file to IE8 and you also want to make sure the corresponding scripts are correctly initialised. The only thing you need to do is call the init() method on the MQuery instance to let your application know your showing the desktop view.
+The watch() method will start listening for changes on the media query object. It will make sure events are triggered on the MQuery instance when the query has matches or doesn't has matches anymore. 
+
+It's important to know that you can also manually activate an MQuery instance. This can be usefull in situations where you know media queries aren't supported, for example in IE8. In many cases you will just serve a desktop css file to IE8 and you also want to make sure the corresponding scripts are correctly initialised. The only thing you need to do is call the init() method on the MQuery instance to let your application know your showing the desktop view.
 
 ```javascript
 var myQuery = new MQuery('only screen and (max-width: 480px)');
