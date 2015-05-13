@@ -10,7 +10,7 @@ The MQueryList provides you with a more convenient API to interact with media qu
 - MQueryList
 
 
-The MQuery class represents a single media query. You can choose you whether you want to use the MQuery class on it's self and create a separate instance/query or through the more higher level API which is provided by the MQueryList.
+The MQuery class represents a single media query. You can choose whether you want to use the MQuery class on it's self and create a separate instance per query or through the more higher level API which is provided by the MQueryList.
 
 The MQueryList provides you with the possiblilty to create multiple MQuery instances and store them in a single object (MQueryList instance). This way you can use one object throughout your app to listen for media query changes.
 
