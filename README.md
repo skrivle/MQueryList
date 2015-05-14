@@ -78,7 +78,7 @@ myList.watch();
 
 ```
 
-It's possible to retrieve MQuery instance from an MQueryList instance by using the get method
+It's possible to retrieve an MQuery instance from an MQueryList instance by using the get method
 
 ``` javascript
 var myQuery = myList.get('mobileAndDown');
