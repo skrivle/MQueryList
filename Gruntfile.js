@@ -3,6 +3,7 @@ module.exports = function (grunt) {
 	'use strict';
 
 	var jsFiles = [
+		'index.js',
 		'lib/**/*.js',
 		'__mocks__/**/*.js',
 		'__tests__/**/*.js'

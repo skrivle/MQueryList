@@ -15,11 +15,11 @@
 	} else {
 
 		// Browser
-		root.MQueryList = factory(MQuery, MQueryList);
+		root.mQueryList = factory(window.MQuery, window.MQueryList);
 	}
 }(this, function (
 	MQuery,
-	MQueryList,
+	MQueryList
 ) {
 
 	'use strict';
