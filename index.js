@@ -15,7 +15,7 @@
 	} else {
 
 		// Browser
-		root.mQueryList = factory(window.MQuery, window.MQueryList);
+		root.mQueryList = factory(root.MQuery, root.MQueryList);
 	}
 }(this, function (
 	MQuery,
