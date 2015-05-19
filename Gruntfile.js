@@ -18,6 +18,12 @@ module.exports = function (grunt) {
 		},
 
 		watch: {
+
+			jshint: {
+				files: jsFiles,
+				tasks: ['jshint']
+			},
+
 			tests: {
 				files: jsFiles,
 				tasks: ['jest']
@@ -37,7 +43,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('dev', ['jest', 'watch']);
+	grunt.registerTask('dev', ['jshint', 'jest', 'watch']);
 	grunt.registerTask('test', ['jshint', 'jest']);
 
 };
