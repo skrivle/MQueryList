@@ -1,4 +1,7 @@
 (function (root, factory) {
+
+	'use strict';
+
 	if (typeof define === 'function' && define.amd) {
 
 		// AMD
@@ -12,12 +15,14 @@
 	} else {
 
 		// Browser
-		window.MQueryList = factory(MQuery, MQueryList);
+		root.MQueryList = factory(MQuery, MQueryList);
 	}
 }(this, function (
 	MQuery,
 	MQueryList,
 ) {
+
+	'use strict';
 
 	return {
 		MQuery: MQuery,

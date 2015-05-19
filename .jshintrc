@@ -1,0 +1,17 @@
+{
+	"strict": true,
+	"undef": true,
+	"unused": true,
+	"predef": {
+		"define": true,
+		"module": true,
+		"require": true,
+		"window": true,
+		"expect": true,
+		"spyOn": true,
+		"describe": true,
+		"it": true,
+		"jest": true,
+		"beforeEach": true
+	}
+}

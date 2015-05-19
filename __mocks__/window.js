@@ -1,15 +1,21 @@
-module.exports = {
-	matchMedia: function () {
-		return {
-			matches: false,
-			addListener: function (callback) {
+(function () {
 
-			},
-			removeListener: function () {
+	'use strict';
 
-			}
+	module.exports = {
+
+		matchMedia: function () {
+
+			return {
+				matches: false,
+				addListener: function () {
+
+				},
+				removeListener: function () {
+
+				}
+			};
 		}
-	}
-};
+	};
 
-
+})();
