@@ -69,6 +69,11 @@ The snippet below assumes that you've installed the package with bower
 
 ``` html
 
+<!-- dependencies -->
+<script src="bower_components/heir/heir.js"></script>
+<script src="bower_components/eventEmitter/EventEmitter.js"></script>
+
+<!-- mquerylist scripts -->
 <script src="bower_components/mquerylist/lib/MQuery.js"></script>
 <script src="bower_components/mquerylist/MQueryList.js"></script>
 
