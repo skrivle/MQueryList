@@ -20,7 +20,7 @@ Please note that this project isn't a window.matchMedia() polyfill. It is build 
 
 ## Setup
 
-You can install this package through npm and bower or just download it from github. The package implements the UMD API so it is usable withing CommonJS and AMD environments. It also exposes globals so you can use it by including script tags.
+You can install this package through npm and bower or just download it from github. The package implements the UMD API so it is usable within CommonJS and AMD environments. It also exposes globals so you can use it by including script tags directly in your html code.
 
 ```
 npm install mquerylist --save
@@ -57,9 +57,9 @@ define(['mquerylist/lib/MQuery'], function (MQuery) {
 	var myQuery = new MQuery('(min-width: 300px)');
 });
 
-define(['mquerylist/index'], function (mquerylist) {
-	var myQuery = new mquerylist.MQuery('(min-width: 300px)');
-	var myList = new mquerylist.MQueryList();
+define(['mquerylist/index'], function (mQueryList) {
+	var myQuery = new mQueryList.MQuery('(min-width: 300px)');
+	var myList = new mQueryList.MQueryList();
 });
 ```
 
