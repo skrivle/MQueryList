@@ -124,19 +124,19 @@ var myList = new MQueryList();
 myList.register('mobileAndDown', 'only screen and (max-width: 480px)');
 myList.register('tabletAndUp', 'only screen and (min-width: 481px)');
 
-myList.on('mobileAndDown.init', function () {
+myList.on('init.mobileAndDown', function () {
 	console.log('Do stuff for mobile ...');
 });
 
-myList.on('tabletAndUp.init', function () {
+myList.on('init.tabletAndUp', function () {
 	console.log('Do stuff for tablet ...');
 });
 
-myList.on('mobileAndDown.destroy', function () {
+myList.on('destroy.mobileAndDown', function () {
 	console.log('Stop doing stuff for mobile ...');
 });
 
-myList.on('tabletAndUp.destroy', function () {
+myList.on('destroy.tabletAndUp', function () {
 	console.log('Stop doing stuff for tablet ...');
 });
 
