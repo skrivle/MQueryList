@@ -18,7 +18,70 @@ The MQueryList provides you with the possiblilty to create multiple MQuery insta
 
 Please note that this project isn't a window.matchMedia() polyfill. It is build upon window.matchMedia() and you will need to include a polyfill to make it work in browsers that don't support window.matchMedia(). Paul Irish did a great job writing one, you can find it at https://github.com/paulirish/matchMedia.js/
 
-## MQuery
+## Setup
+
+You can install this package through npm and bower or just download it from github. The package implements the UMD API so it is usable withing CommonJS and AMD environments. It also exposes globals so you can use it by including script tags.
+
+```
+npm install mquerylist --save
+```
+
+```
+bower install mquerylist --save
+```
+
+### CommonJS
+
+First install the package with NPM
+
+``` javascript
+
+// MQueryList class
+var MQueryList = require('mquerylist').MQueryList;
+
+// MQuery class
+var MQuery = require('mquerylist').MQuery;
+```
+
+### AMD
+
+This snippet assumes that the package is installed with bower and to you've set the basePath to the bower_components directory.
+
+```javascript
+
+define(['mquerylist/lib/MQueryList'], function (MQueryList) {
+	var myList = new MQueryList();
+});
+
+define(['mquerylist/lib/MQuery'], function (MQuery) {
+	var myQuery = new MQuery('(min-width: 300px)');
+});
+
+define(['mquerylist/index'], function (mquerylist) {
+	var myQuery = new mquerylist.MQuery('(min-width: 300px)');
+	var myList = new mquerylist.MQueryList();
+});
+```
+
+### Globals
+
+The snippet below assumes that you've installed the package with bower
+
+``` html
+
+<script src="bower_components/mquerylist/lib/MQuery.js"></script>
+<script src="bower_components/mquerylist/MQueryList.js"></script>
+
+<script>
+	var myQuery = new MQuery('(min-width: 300px)');
+	var myList = new MQueryList();
+</script>
+```
+
+
+## API
+
+### MQuery
 
 ``` javascript
 var myQuery = new MQuery('only screen and (max-width: 480px)');
@@ -52,7 +115,7 @@ myQuery.on('destroy', function () {
 myQuery.init();
 ```
 
-## MQueryList
+### MQueryList
 
 ``` javascript
 var myList = new MQueryList();
