@@ -4,6 +4,8 @@ This module isn't usable yet, it's work in progress.
 
 # MQueryList && MQuery
 
+[![Build Status](https://travis-ci.org/vejersele/MQueryList.svg?branch=master)](https://travis-ci.org/vejersele/MQueryList)
+
 The MQueryList provides you with a more convenient API to interact with media queries in Javascript. This package exists out of two Classes:
 
 - MQuery
