@@ -12,6 +12,7 @@
 		"describe": true,
 		"it": true,
 		"jest": true,
-		"beforeEach": true
+		"beforeEach": true,
+		"jasmine": true
 	}
 }
