@@ -1,5 +1,5 @@
 {
-  "name": "MQueryList",
+  "name": "mquerylist",
   "version": "0.0.0",
   "main": "index.js",
   "devDependencies": {
