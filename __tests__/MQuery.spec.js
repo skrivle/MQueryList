@@ -80,7 +80,8 @@
 
 			instance.watch();
 
-			expect(instance._mql.addListener).toHaveBeenCalled();
+			expect(instance._mql.addListener).toHaveBeenCalledWith(jasmine.any('Function'));
+			expect(instance._mql.addListener.mostRecentCall.args[0] === instance._onChange).toBe(true);
 
 		});
 
@@ -105,7 +106,8 @@
 			instance.watch();
 			instance.stopWatching();
 
-			expect(instance._mql.removeListener).toHaveBeenCalled();
+			expect(instance._mql.removeListener).toHaveBeenCalledWith(jasmine.any('Function'));
+			expect(instance._mql.removeListener.mostRecentCall.args[0] === instance._onChange).toBe(true);
 
 		});
 	});
