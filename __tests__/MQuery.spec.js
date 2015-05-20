@@ -39,7 +39,7 @@
 			expect(called).toBe(true);
 		});
 
-		it('should set the activate the query', function () {
+		it('should activate the query', function () {
 			instance.init();
 			expect(instance.isActive()).toBe(true);
 		});
