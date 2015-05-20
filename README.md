@@ -49,15 +49,15 @@ This snippet assumes that the package is installed with bower and to you've set 
 
 ```javascript
 
-define(['mquerylist/lib/MQueryList'], function (MQueryList) {
+require(['mquerylist/lib/MQueryList'], function (MQueryList) {
 	var myList = new MQueryList();
 });
 
-define(['mquerylist/lib/MQuery'], function (MQuery) {
+require(['mquerylist/lib/MQuery'], function (MQuery) {
 	var myQuery = new MQuery('(min-width: 300px)');
 });
 
-define(['mquerylist/index'], function (mQueryList) {
+require(['mquerylist/index'], function (mQueryList) {
 	var myQuery = new mQueryList.MQuery('(min-width: 300px)');
 	var myList = new mQueryList.MQueryList();
 });
