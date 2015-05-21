@@ -36,6 +36,12 @@ module.exports = function (grunt) {
 				jshintrc: true
 			},
 			all: jsFiles
+		},
+
+		coveralls: {
+			options: {
+				src: 'coverage/lcov.info'
+			}
 		}
 
 	});
@@ -43,6 +49,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-jest');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-coveralls');
 
 	grunt.registerTask('dev', ['jshint', 'jest', 'watch']);
 	grunt.registerTask('test', ['jshint', 'jest']);

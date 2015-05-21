@@ -1,6 +1,6 @@
 # MQueryList && MQuery
 
-[![Build Status](https://travis-ci.org/vejersele/MQueryList.svg?branch=master)](https://travis-ci.org/vejersele/MQueryList)
+[![Build Status](https://travis-ci.org/vejersele/MQueryList.svg?branch=master)](https://travis-ci.org/vejersele/MQueryList) [![Coverage Status](https://coveralls.io/repos/vejersele/MQueryList/badge.svg)](https://coveralls.io/r/vejersele/MQueryList)
 
 The MQueryList provides you with a more convenient API to interact with media queries in Javascript. This package exists out of two Classes:
 
