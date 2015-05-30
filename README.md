@@ -41,7 +41,7 @@ var MQuery = require('mquerylist').MQuery;
 
 ### AMD
 
-This snippet assumes that the package is installed with bower and to you've set the basePath to the bower_components directory.
+This snippet assumes that the package is installed with bower and that you've set the basePath to the bower_components directory.
 
 ```javascript
 
