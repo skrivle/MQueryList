@@ -71,7 +71,7 @@ The snippet below assumes that you've installed the package with bower
 
 <!-- mquerylist scripts -->
 <script src="bower_components/mquerylist/lib/MQuery.js"></script>
-<script src="bower_components/mquerylist/MQueryList.js"></script>
+<script src="bower_components/mquerylist/lib/MQueryList.js"></script>
 
 <script>
 	var myQuery = new MQuery('(min-width: 300px)');
