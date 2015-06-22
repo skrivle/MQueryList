@@ -52,6 +52,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-coveralls');
 
 	grunt.registerTask('dev', ['jshint', 'jest', 'watch']);
-	grunt.registerTask('test', ['jshint', 'jest']);
+	grunt.registerTask('test', ['jshint', 'jest', 'coveralls']);
 
 };
