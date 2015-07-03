@@ -98,6 +98,14 @@
 		});
 	});
 
+	describe('# --- doQueryAction ---', function () {
+
+		it('should not crash when called with a method that doesn\'t exist', function () {
+			instance.register('mobile', '(max-width: 320px)');
+			instance.doQueryAction('mobile', 'test');
+		});
+	});
+
 	describe('# --- watch ---', function () {
 
 		it('should start watching all MQuery instances', function () {
