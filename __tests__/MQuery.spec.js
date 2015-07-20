@@ -81,6 +81,8 @@
 			instance.watch();
 
 			expect(instance._mql.addListener).toHaveBeenCalledWith(jasmine.any('Function'));
+
+			// Check if addEventListener is called with the _onChange handler as parameter ...
 			expect(instance._mql.addListener.mostRecentCall.args[0] === instance._onChange).toBe(true);
 
 		});
