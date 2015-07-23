@@ -28,6 +28,18 @@
 		});
 	});
 
+	describe('# --- getKey ----', function () {
+
+		it('should return undefined when no key was found', function () {
+
+			instance.register('mobile', '(max-width: 320px)');
+			instance.register('tablet', '(min-width: 720px)');
+
+			var test = {};
+			expect(instance.getKey(test)).toBeUndefined();
+		});
+	});
+
 	describe('# --- register ---', function () {
 
 		it('should add an MQuery instance to the list', function () {
