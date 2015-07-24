@@ -144,6 +144,12 @@
 
 		});
 
+		it('should use a save loop to run through all the query instances', function () {
+			Object.prototype.__test = 'test';
+			instance.watch();
+			delete Object.prototype.__test;
+		});
+
 	});
 
 })();
