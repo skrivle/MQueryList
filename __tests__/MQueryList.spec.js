@@ -87,7 +87,7 @@
 			expect(mQuery.destroy).toHaveBeenCalled();
 		});
 
-		it('should propagate init and destroy event correctly', function () {
+		it('should propagate the init and destroy events correctly', function () {
 
 			var initCalled, destroyCalled;
 
